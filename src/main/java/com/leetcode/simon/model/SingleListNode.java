@@ -3,17 +3,17 @@ package com.leetcode.simon.model;
 /**
  * Created by Simon Suen on 2018/9/12.
  */
-public class ListNode {
+public class SingleListNode {
     public int val;
-    public ListNode next;
+    public SingleListNode next;
 
-    public ListNode(int x) {
-        val = x;
+    public SingleListNode(int val) {
+        this.val = val;
     }
 
     @Override
     public String toString() {
-        return "ListNode{" +
+        return "SingleListNode{" +
                 "val=" + val +
                 ", next=" + next +
                 '}';

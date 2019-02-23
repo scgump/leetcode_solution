@@ -1,7 +1,7 @@
 package com.leetcode.simon.algo.list;
 
 import com.leetcode.simon.Solution;
-import com.leetcode.simon.model.ListNode;
+import com.leetcode.simon.model.SingleListNode;
 import com.leetcode.simon.util.ListTestHelper;
 
 /**
@@ -9,9 +9,9 @@ import com.leetcode.simon.util.ListTestHelper;
  */
 public class AddTwoNum2 implements Solution {
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode preHead = new ListNode(0);
-        ListNode pointer = preHead;
+    public SingleListNode addTwoNumbers(SingleListNode l1, SingleListNode l2) {
+        SingleListNode preHead = new SingleListNode(0);
+        SingleListNode pointer = preHead;
         int sum = 0;
         while (l1 != null || l2 != null || sum != 0) {
             if (l1 != null) {
@@ -24,7 +24,7 @@ public class AddTwoNum2 implements Solution {
                 l2 = l2.next;
             }
 
-            pointer.next = new ListNode(sum % 10);
+            pointer.next = new SingleListNode(sum % 10);
             pointer = pointer.next;
 
             sum /= 10;
@@ -38,18 +38,18 @@ public class AddTwoNum2 implements Solution {
         // l1: 243
         System.out.print("left: ");
         int[] values = {2, 4, 3};
-        ListNode l1 = ListTestHelper.constructList(values);
+        SingleListNode l1 = ListTestHelper.constructList(values);
         ListTestHelper.printList(l1);
 
         // l2: 564
         System.out.print("right: ");
         values = new int[] {5, 6, 4};
-        ListNode l2 = ListTestHelper.constructList(values);
+        SingleListNode l2 = ListTestHelper.constructList(values);
         ListTestHelper.printList(l2);
 
         // add
         System.out.print("sum: ");
-        ListNode sum = addTwoNumbers(l1, l2);
+        SingleListNode sum = addTwoNumbers(l1, l2);
         ListTestHelper.printList(sum);
     }
 }

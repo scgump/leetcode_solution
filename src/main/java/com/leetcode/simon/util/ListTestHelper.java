@@ -1,6 +1,6 @@
 package com.leetcode.simon.util;
 
-import com.leetcode.simon.model.ListNode;
+import com.leetcode.simon.model.SingleListNode;
 
 /**
  * Just used for testing
@@ -12,12 +12,12 @@ public class ListTestHelper {
      * construct a list from an int array,
      * return head node
      */
-    public static ListNode constructList(int[] values) {
-        ListNode preHead = new ListNode(0);
-        ListNode pointer = preHead;
+    public static SingleListNode constructList(int[] values) {
+        SingleListNode preHead = new SingleListNode(0);
+        SingleListNode pointer = preHead;
 
         for (int value : values) {
-            pointer.next = new ListNode(value);
+            pointer.next = new SingleListNode(value);
             pointer = pointer.next;
         }
         pointer.next = null;
@@ -28,14 +28,14 @@ public class ListTestHelper {
     /**
      * print a linked list
      */
-    public static void printList(ListNode head) {
+    public static void printList(SingleListNode head) {
         if (head == null)
             System.out.println("Empty List");
 
         StringBuilder sb = new StringBuilder();
 
         boolean isFirst = true;
-        ListNode pointer = head;
+        SingleListNode pointer = head;
         while (pointer != null) {
             if (isFirst) {
                 sb.append(pointer.val);
