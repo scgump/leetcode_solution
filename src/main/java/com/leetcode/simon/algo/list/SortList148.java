@@ -1,11 +1,13 @@
 package com.leetcode.simon.algo.list;
 
 import com.leetcode.simon.Solution;
-import com.leetcode.simon.model.SingleListNode;
+import com.leetcode.simon.model.list.SingleListNode;
 import com.leetcode.simon.util.ListTestHelper;
 
 /**
  * https://leetcode.com/problems/sort-list/description/
+ *
+ * Sort a linked list in O(n log n) time using constant space complexity.
  */
 public class SortList148 implements Solution {
 

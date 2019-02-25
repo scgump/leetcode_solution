@@ -1,4 +1,4 @@
-package com.leetcode.simon.model;
+package com.leetcode.simon.model.list;
 
 /**
  * Created by Simon Suen on 2018/9/12.

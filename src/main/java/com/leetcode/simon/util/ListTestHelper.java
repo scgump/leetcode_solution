@@ -1,6 +1,6 @@
 package com.leetcode.simon.util;
 
-import com.leetcode.simon.model.SingleListNode;
+import com.leetcode.simon.model.list.SingleListNode;
 
 /**
  * Just used for testing
