@@ -13,7 +13,7 @@ import com.leetcode.simon.util.ListTestHelper;
  *
  * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
  */
-public class AddTwoNum2 implements Solution {
+public class AddTwoNum implements Solution {
 
     public SingleListNode addTwoNumbers(SingleListNode l1, SingleListNode l2) {
         SingleListNode preHead = new SingleListNode(0);

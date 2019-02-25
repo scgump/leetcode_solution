@@ -9,7 +9,7 @@ import com.leetcode.simon.util.ListTestHelper;
  *
  * Sort a linked list in O(n log n) time using constant space complexity.
  */
-public class SortList148 implements Solution {
+public class SortList implements Solution {
 
     public SingleListNode sortList(SingleListNode head) {
 
