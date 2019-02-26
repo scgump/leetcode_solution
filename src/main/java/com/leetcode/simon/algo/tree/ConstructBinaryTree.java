@@ -3,8 +3,6 @@ package com.leetcode.simon.algo.tree;
 import com.leetcode.simon.Solution;
 import com.leetcode.simon.model.tree.BinaryTreeNode;
 import com.leetcode.simon.util.TreeTestHelper;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
@@ -12,7 +10,7 @@ import java.util.Map;
  * Given inorder and postorder traversal of a tree, construct the binary tree.
  */
 public class ConstructBinaryTree implements Solution {
-  
+
   public BinaryTreeNode<Integer> buildTree(int[] inorder, int[] postorder) {
     if (inorder.length == 0 || postorder.length == 0)
       return null;

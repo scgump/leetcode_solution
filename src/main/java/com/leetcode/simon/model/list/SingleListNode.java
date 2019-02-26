@@ -9,6 +9,7 @@ public class SingleListNode {
 
     public SingleListNode(int val) {
         this.val = val;
+        next = null;
     }
 
     @Override
