@@ -16,7 +16,7 @@ public class TreeTestHelper {
    * `null` means empty node
    */
   @SuppressWarnings("unchecked")
-  public static BinaryTreeNode constructBinaryTree(String[] values) {
+  public static BinaryTreeNode<Integer> constructBinaryTree(String[] values) {
     if (values.length <= 0) return null;
 
     BinaryTreeNode[] nodes = new BinaryTreeNode[values.length];
